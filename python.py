@@ -3,16 +3,21 @@
 
 while True:
     prompt = input("SuperMathyboard> ")
-
+    
+    # Grabbing only the first string part of the user input
     operator = prompt.split(' ', 1)[0]
-
+    
+    # Quits the program if user enters quit 
     if operator  == "quit":
         break
-
+    
+    # This splits the number part of the string 
     split_number_string = prompt.split(' ', 1)[1]
-
+    
+    # This splits the last number part of the string 
     split_third_part = split_number_string.split(' ')[1]
-
+    
+    # Converting string of lists into numbers list 
     y = split_number_string.split(' ')
     y = [float(i) for i in y]
 
