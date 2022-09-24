@@ -4,3 +4,7 @@
 prompt = input("SuperMathyboard> ")
 
 operator = prompt.split(' ', 1)[0]
+
+split_number_string = prompt.split(' ', 1)[1]
+
+split_third_part = split_number_string.split(' ')[1]
